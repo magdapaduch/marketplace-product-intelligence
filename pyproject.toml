@@ -1,0 +1,19 @@
+[project]
+name = "marketplace-product-intelligence"
+version = "0.1.0"
+description = "End-to-end data science project for marketplace product mapping quality and trend detection."
+requires-python = ">=3.11,<3.13"
+
+[project.optional-dependencies]
+data = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]
+
+dev = [
+    "pytest",
+]
