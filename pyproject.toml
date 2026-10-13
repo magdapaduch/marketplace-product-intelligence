@@ -12,6 +12,7 @@ data = [
     "matplotlib",
     "seaborn",
     "jupyter",
+    "requests",
 ]
 
 dev = [
