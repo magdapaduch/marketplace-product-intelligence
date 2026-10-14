@@ -283,3 +283,25 @@ The pipeline expects the source samples to be available locally. Generated files
 This project demonstrates an end-to-end exploratory workflow: data sampling, data preparation, statistical ranking, trend detection, explainable quality checks, automated reporting, and testing.
 
 Its focus is on reproducibility, transparent assumptions, and careful interpretation of imperfect data.
+
+## Visual Results
+
+### 1. Review Rating Distribution
+
+The distribution of review ratings provides a quick overview of the feedback captured in the collected sample.
+
+![Distribution of review ratings](reports/figures/rating_distribution.png)
+
+### 2. Monthly Review Activity
+
+Monthly review counts show how the collected sample is distributed over time.
+
+**Limitation:** Reviews were collected using bounded byte-range sampling rather than random sampling. Monthly counts should not be interpreted as representative marketplace activity, sales, or demand.
+
+![Monthly review activity](reports/figures/monthly_review_activity.png)
+
+### 3. Top-Ranked Products
+
+Products are ranked using a confidence-adjusted score that combines the average product rating with the overall sample mean. This reduces the influence of high ratings based on very few reviews.
+
+![Top 10 products by adjusted score](reports/figures/top_products_ranking.png)
