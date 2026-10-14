@@ -1,0 +1,252 @@
+{
+  "purpose": "Assess sensitivity of product ranking to prior strength",
+  "min_reviews": 3,
+  "top_n": 10,
+  "reference_prior_strength": 5,
+  "rankings": {
+    "3": {
+      "prior_strength": 3,
+      "ranked_products": 1348,
+      "top_n_overlap_with_m5": 9,
+      "top_n_overlap_rate_with_m5": 0.9,
+      "top_products": [
+        {
+          "rank": 1,
+          "parent_asin": "B001V220YU",
+          "review_count": 33,
+          "average_rating": 4.9394,
+          "adjusted_score": 4.8746
+        },
+        {
+          "rank": 2,
+          "parent_asin": "B0C6Y2PCLN",
+          "review_count": 38,
+          "average_rating": 4.8947,
+          "adjusted_score": 4.8411
+        },
+        {
+          "rank": 3,
+          "parent_asin": "B00EEQ92J6",
+          "review_count": 12,
+          "average_rating": 5.0,
+          "adjusted_score": 4.8324
+        },
+        {
+          "rank": 4,
+          "parent_asin": "B004YESQWM",
+          "review_count": 10,
+          "average_rating": 5.0,
+          "adjusted_score": 4.8066
+        },
+        {
+          "rank": 5,
+          "parent_asin": "B0BQ3VVGDT",
+          "review_count": 10,
+          "average_rating": 5.0,
+          "adjusted_score": 4.8066
+        },
+        {
+          "rank": 6,
+          "parent_asin": "B08WYH9T9Y",
+          "review_count": 8,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7714
+        },
+        {
+          "rank": 7,
+          "parent_asin": "B01G7SBOF8",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7486
+        },
+        {
+          "rank": 8,
+          "parent_asin": "B01N3Q9E5Y",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7486
+        },
+        {
+          "rank": 9,
+          "parent_asin": "B07SGPJBZ6",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7486
+        },
+        {
+          "rank": 10,
+          "parent_asin": "B09BMHF8CM",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7486
+        }
+      ]
+    },
+    "5": {
+      "prior_strength": 5,
+      "ranked_products": 1348,
+      "top_n_overlap_with_m5": 10,
+      "top_n_overlap_rate_with_m5": 1.0,
+      "top_products": [
+        {
+          "rank": 1,
+          "parent_asin": "B001V220YU",
+          "review_count": 33,
+          "average_rating": 4.9394,
+          "adjusted_score": 4.8371
+        },
+        {
+          "rank": 2,
+          "parent_asin": "B0C6Y2PCLN",
+          "review_count": 38,
+          "average_rating": 4.8947,
+          "adjusted_score": 4.8095
+        },
+        {
+          "rank": 3,
+          "parent_asin": "B00EEQ92J6",
+          "review_count": 12,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7535
+        },
+        {
+          "rank": 4,
+          "parent_asin": "B004YESQWM",
+          "review_count": 10,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7207
+        },
+        {
+          "rank": 5,
+          "parent_asin": "B0BQ3VVGDT",
+          "review_count": 10,
+          "average_rating": 5.0,
+          "adjusted_score": 4.7207
+        },
+        {
+          "rank": 6,
+          "parent_asin": "B0BRBSNXNT",
+          "review_count": 22,
+          "average_rating": 4.8182,
+          "adjusted_score": 4.6967
+        },
+        {
+          "rank": 7,
+          "parent_asin": "B08WYH9T9Y",
+          "review_count": 8,
+          "average_rating": 5.0,
+          "adjusted_score": 4.6777
+        },
+        {
+          "rank": 8,
+          "parent_asin": "B01G7SBOF8",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.6508
+        },
+        {
+          "rank": 9,
+          "parent_asin": "B01N3Q9E5Y",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.6508
+        },
+        {
+          "rank": 10,
+          "parent_asin": "B07SGPJBZ6",
+          "review_count": 7,
+          "average_rating": 5.0,
+          "adjusted_score": 4.6508
+        }
+      ]
+    },
+    "10": {
+      "prior_strength": 10,
+      "ranked_products": 1348,
+      "top_n_overlap_with_m5": 7,
+      "top_n_overlap_rate_with_m5": 0.7,
+      "top_products": [
+        {
+          "rank": 1,
+          "parent_asin": "B001V220YU",
+          "review_count": 33,
+          "average_rating": 4.9394,
+          "adjusted_score": 4.7586
+        },
+        {
+          "rank": 2,
+          "parent_asin": "B0C6Y2PCLN",
+          "review_count": 38,
+          "average_rating": 4.8947,
+          "adjusted_score": 4.7421
+        },
+        {
+          "rank": 3,
+          "parent_asin": "B00EEQ92J6",
+          "review_count": 12,
+          "average_rating": 5.0,
+          "adjusted_score": 4.6191
+        },
+        {
+          "rank": 4,
+          "parent_asin": "B0BRBSNXNT",
+          "review_count": 22,
+          "average_rating": 4.8182,
+          "adjusted_score": 4.6131
+        },
+        {
+          "rank": 5,
+          "parent_asin": "B004YESQWM",
+          "review_count": 10,
+          "average_rating": 5.0,
+          "adjusted_score": 4.581
+        },
+        {
+          "rank": 6,
+          "parent_asin": "B0BQ3VVGDT",
+          "review_count": 10,
+          "average_rating": 5.0,
+          "adjusted_score": 4.581
+        },
+        {
+          "rank": 7,
+          "parent_asin": "B018HSB7GW",
+          "review_count": 260,
+          "average_rating": 4.5538,
+          "adjusted_score": 4.5393
+        },
+        {
+          "rank": 8,
+          "parent_asin": "B08CSZDXZY",
+          "review_count": 19,
+          "average_rating": 4.7368,
+          "adjusted_score": 4.5386
+        },
+        {
+          "rank": 9,
+          "parent_asin": "B0BZY8BRGB",
+          "review_count": 34,
+          "average_rating": 4.6471,
+          "adjusted_score": 4.5368
+        },
+        {
+          "rank": 10,
+          "parent_asin": "B08WYH9T9Y",
+          "review_count": 8,
+          "average_rating": 5.0,
+          "adjusted_score": 4.5344
+        }
+      ]
+    }
+  },
+  "rank_correlation_vs_m5": {
+    "m5_vs_m3": {
+      "common_products": 1348,
+      "spearman_rank_correlation": 0.9935
+    },
+    "m5_vs_m10": {
+      "common_products": 1348,
+      "spearman_rank_correlation": 0.9953
+    }
+  }
+}

@@ -305,3 +305,46 @@ Monthly review counts show how the collected sample is distributed over time.
 Products are ranked using a confidence-adjusted score that combines the average product rating with the overall sample mean. This reduces the influence of high ratings based on very few reviews.
 
 ![Top 10 products by adjusted score](reports/figures/top_products_ranking.png)
+
+## Machine Learning: Review Rating Prediction
+
+The project includes a text classification model that predicts review ratings from review text.
+
+**Approach**
+- TF-IDF features using word unigrams and bigrams
+- Logistic Regression with class weighting
+- A majority-class baseline for comparison
+- A group-based 80/20 train-test split by `parent_asin` to prevent the same product from appearing in both sets
+
+**Test-set results**
+
+| Metric | Majority baseline | TF-IDF + Logistic Regression |
+|---|---:|---:|
+| Accuracy | 0.6664 | 0.6891 |
+| Balanced accuracy | 0.2000 | 0.5030 |
+| Macro F1 | 0.1600 | 0.4796 |
+| Weighted F1 | 0.5330 | 0.7091 |
+
+The model improves macro F1 and balanced accuracy relative to the majority baseline. However, performance varies substantially by rating class: ratings 2–4 remain more difficult to predict than rating 5.
+
+![Confusion matrix for review rating prediction](reports/rating_confusion_matrix.png)
+
+**Limitations:** Ratings are strongly imbalanced. Predictions reflect patterns in review text, not objective product quality. The evaluation measures generalization to products held out from training within this collected sample; it does not establish performance on a representative marketplace population.
+
+## Ranking Sensitivity Analysis
+
+The confidence-adjusted product ranking was evaluated with prior strength values of `m = 3`, `m = 5`, and `m = 10`.
+
+| Prior strength | Products shared with the `m = 5` top 10 |
+|---|---:|
+| 3 | 9/10 |
+| 5 | 10/10 |
+| 10 | 7/10 |
+
+Full-ranking Spearman correlations with the `m = 5` ranking were 0.9935 for `m = 3` and 0.9953 for `m = 10`, across 1,348 common products.
+
+![Ranking sensitivity across prior strengths](reports/ranking_sensitivity.png)
+
+The overall ordering is highly correlated across settings, while some products change in or out of the top 10. This analysis measures parameter sensitivity, not whether the ranking predicts actual sales or objective product quality.
+
+Detailed outputs are saved in `reports/model_evaluation.json` and `reports/ranking_sensitivity.json`.

@@ -1,0 +1,69 @@
+{
+  "task": "Predict review rating from review text",
+  "model": "TF-IDF (unigrams and bigrams) + Logistic Regression",
+  "random_state": 42,
+  "split_strategy": "80/20 GroupShuffleSplit grouped by parent_asin; products do not overlap between train and test",
+  "n_rows": 44484,
+  "n_train": 34664,
+  "n_test": 9820,
+  "n_train_products": 26655,
+  "n_test_products": 6664,
+  "product_overlap": 0,
+  "baseline": {
+    "accuracy": 0.6664,
+    "balanced_accuracy": 0.2,
+    "macro_f1": 0.16,
+    "weighted_f1": 0.533
+  },
+  "model_metrics": {
+    "accuracy": 0.6891,
+    "balanced_accuracy": 0.503,
+    "macro_f1": 0.4796,
+    "weighted_f1": 0.7091
+  },
+  "classification_report": {
+    "1": {
+      "precision": 0.5961027457927369,
+      "recall": 0.6656775469831849,
+      "f1-score": 0.6289719626168224,
+      "support": 1011.0
+    },
+    "2": {
+      "precision": 0.2224231464737794,
+      "recall": 0.23929961089494164,
+      "f1-score": 0.23055295220243674,
+      "support": 514.0
+    },
+    "3": {
+      "precision": 0.28784403669724773,
+      "recall": 0.3718518518518519,
+      "f1-score": 0.32449903038138334,
+      "support": 675.0
+    },
+    "4": {
+      "precision": 0.3025806451612903,
+      "recall": 0.4358736059479554,
+      "f1-score": 0.3571972581873572,
+      "support": 1076.0
+    },
+    "5": {
+      "precision": 0.9186494051784465,
+      "recall": 0.8024144254278729,
+      "f1-score": 0.8566068515497554,
+      "support": 6544.0
+    },
+    "accuracy": 0.6891038696537678,
+    "macro avg": {
+      "precision": 0.46551999586070014,
+      "recall": 0.5030234082211613,
+      "f1-score": 0.47956561098755107,
+      "support": 9820.0
+    },
+    "weighted avg": {
+      "precision": 0.7381363115820697,
+      "recall": 0.6891038696537678,
+      "f1-score": 0.7091050105393369,
+      "support": 9820.0
+    }
+  }
+}
